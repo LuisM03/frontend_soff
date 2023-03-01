@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Ventas from "./views/ventas";
-import Usuario from "./views/usuarios";
+import Insumos from "./views/insumos";
+import Pedidos from "./views/Pedidos";
 
 const router = createBrowserRouter([
     {
@@ -8,8 +9,12 @@ const router = createBrowserRouter([
         element: <Ventas />
     },
     {
-        path: "/usuarios",
-        element: <Usuario />
+        path: "/insumos",
+        element: <Insumos />
+    },
+    {
+        path: "/pedidos",
+        element: <Pedidos />
     }
 ])
 
