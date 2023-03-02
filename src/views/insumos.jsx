@@ -1,10 +1,10 @@
 import Navbar from "../components/navbar"
 
-export default function Ventas(){
+export default function Insumo(){
     return (
         <div>
             <Navbar /> 
-            <h1>Hola perros de ventas</h1>
+            <h1>Bienvenido al modulo insumos</h1>
         </div>
     )
 }

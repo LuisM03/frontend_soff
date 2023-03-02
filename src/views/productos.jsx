@@ -1,10 +1,10 @@
 import Navbar from "../components/navbar"
 
-export default function Usuario(){
+export default function Producto(){
     return (
         <div>
             <Navbar/>
-            <h1>Hola usuarios</h1>
+            <h1>Hola productos</h1>
         </div>
     )
 }
