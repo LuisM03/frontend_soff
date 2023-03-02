@@ -8,11 +8,11 @@ export default function FormLogin(){
             <form>
                 <div className="control flex flex-col mb-5">
                     <label htmlFor="" className="mb-2 text-[15px] font-medium">Número de cédula</label>
-                    <input type="text" className="w-full border px-2 text-[14px] py-2 rounded" placeholder="Ingrese su número de cédula"/>
+                    <input required type="text" className="w-full border px-2 text-[14px] py-2 rounded" placeholder="Ingrese su número de cédula"/>
                 </div>
                 <div className="control flex flex-col mb-5">
                     <label htmlFor="" className="mb-2 text-[15px] font-medium">Contraseña</label>
-                    <input type="text" className="w-full border px-2 text-[14px] py-2 rounded" placeholder="Ingrese su contraseña"/>
+                    <input required type="password" className="w-full border px-2 text-[14px] py-2 rounded" placeholder="Ingrese su contraseña"/>
                 </div>
                 <div className="control flex flex-col mb-5">
                     <Link to="/recuperar_password" className="text-[14px] text-right font-medium">Recuperar contraseña</Link>

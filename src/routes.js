@@ -52,24 +52,25 @@ const router = createBrowserRouter([
         path: "/providers",
         element: <Providers />
     },
-
-
     {
-        path: "/iniciar_sesion",
-        element: <Login />
+        path: "/login",
+        element: <Login />,
     },
     {
-        path: "/recuperar_password",
+        path: "recovery_password",
         element: <RecuperarContraseña />
     },
     {
-        path: "/recuperar_codigo",
+        path: "code_generation",
         element: <RecuperarCodigo />
     },
     {
-        path: "/nueva_contraseña",
+        path: "new_password",
         element: <NuevaContraseña />
     }
+    
+    
+    
 ])
 
 export default router
