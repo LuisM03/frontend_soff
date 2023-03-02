@@ -4,7 +4,7 @@ export default function Usuarios(){
     return (
         <div>
             <Navbar/>
-            <h1>Hola usuarios</h1>
+            <h1>Hola ef</h1>
         </div>
     )
 }
