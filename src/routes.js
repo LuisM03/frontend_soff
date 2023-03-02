@@ -4,7 +4,7 @@ import Pedido from "./views/pedidos";
 import Ventas from "./views/ventas";
 import Producto from "./views/productos";
 import Receta from "./views/recetas";
-import Usuario from "./views/usuarios";
+import Usuarios from "./views/usuarios";
 import Compras from "./views/compras";
 import Providers from "./views/providers";
 
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/usuarios",
-        element: <Usuario />
+        element: <Usuarios />
     },
     {
         path: "/compras",
