@@ -4,7 +4,7 @@ export default function Insumo(){
     return (
         <div>
             <Navbar /> 
-            <h1>Bienvenido al modulo insumo</h1>
+            <h1>Bienvenido al modulo insumos</h1>
         </div>
     )
 }
