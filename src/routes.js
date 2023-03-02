@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Ventas from "./views/ventas";
-import Insumos from "./views/insumos";
-import Pedidos from "./views/Pedidos";
+import Ventas from "./views/ventas"; //nombre de la funcion - nombre del documento
+import Insumo from "./views/insumos";
+import Pedido from "./views/pedidos";
 
 const router = createBrowserRouter([
     {
@@ -10,11 +10,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/insumos",
-        element: <Insumos />
+        element: <Insumo />
     },
     {
         path: "/pedidos",
-        element: <Pedidos />
+        element: <Pedido />
     }
 ])
 
