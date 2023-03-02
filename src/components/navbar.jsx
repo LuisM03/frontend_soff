@@ -3,7 +3,8 @@ import { Link } from "react-router-dom"
 export default function Navbar(){
     return(
         <div className="flex items-center">
-            <Link to="/ventas" className="mx-2">ventas</Link>
+            <Link to="/ventas">ventas</Link>
+            <Link to="/providers">providers</Link>
         </div>
     )
 }
