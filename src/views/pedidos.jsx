@@ -1,10 +1,11 @@
-import Navbar from "../components/navbar"
+// import Navbar from "../components/navbar"
+import Cuerpo from "../components/cuerpo"
 
 export default function Pedido(){
     return (
         <div>
-            <Navbar /> 
-            <h1>Bienvenido a modulo pedidos</h1>
+            {/* <Navbar />  */}
+            <Cuerpo /> 
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./styles/style-navbar.css"
+import "./styles/style-cabecera.css"
 export default function Navbar(){
     return(
         <div className="caja">
