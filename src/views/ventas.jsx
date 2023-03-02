@@ -4,7 +4,7 @@ export default function Ventas(){
     return (
         <div>
             <Navbar /> 
-            <h1>Hola ventas</h1>
+            <h1>Hola perros de ventas</h1>
         </div>
     )
 }
