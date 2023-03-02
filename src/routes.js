@@ -5,6 +5,7 @@ import Ventas from "./views/ventas";
 import Producto from "./views/productos";
 import Receta from "./views/recetas";
 import Usuario from "./views/usuarios";
+import Compras from "./views/compras";
 import Providers from "./views/providers";
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     {
         path: "/usuarios",
         element: <Usuario />
+    },
+    {
+        path: "/compras",
+        element: <Compras />
     },
     {
         path: "/providers",
