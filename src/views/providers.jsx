@@ -1,8 +1,13 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar"
+import Tabla from "../components/tabla"
 
 export default function Providers(){
-    <div>
-        <Navbar/>
-        <h1>HOlaaaaaaaa</h1>
-    </div>
+    return (
+        <div>
+            {/* <Navbar/> */}
+
+            <Tabla/>
+       
+        </div>
+    )
 }
