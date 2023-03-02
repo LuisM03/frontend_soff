@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import Ventas from "./views/ventas"; 
 import Insumo from "./views/insumos";
 import Pedido from "./views/pedidos";
 import Ventas from "./views/ventas";
