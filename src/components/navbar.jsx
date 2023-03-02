@@ -4,6 +4,8 @@ export default function Navbar(){
     return(
         <div>
             <Link to="/ventas">ventas</Link>
+            <Link to="/compras">compras</Link>
+            <Link to="/usuarios">usuario</Link>
         </div>
     )
 }
