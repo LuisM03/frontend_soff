@@ -4,7 +4,7 @@ export default function Cuerpo(){
     return(
         <div className="cuerpo">
             <div className="name-modulo">
-                <p>Pedido</p>
+                <p class="ttp02">Pedido</p>
             </div>
 
             <div className="time">
