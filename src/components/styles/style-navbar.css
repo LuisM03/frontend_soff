@@ -1,3 +1,193 @@
-.caja{
-    background-color: red;
+body{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 80px;
 }
+.body-expanded{
+    margin-left: 300px;
+}
+#main-container{
+    color: #ffffff;
+}
+#menu-lateral{
+    background-color: #0453F4;
+    color: #b7c5ca;
+    position: fixed;
+    /* width: 20%; */
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+#menu-lateral Link{
+    text-decoration:none;
+    color: #b7deee;
+    /* padding-bottom: 25px; 
+    padding-left: 30px;
+    text-align:left; */
+}
+
+            /* HEADER  */
+#menu-lateral #header{
+    box-sizing: border-box;
+}
+#menu-lateral #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#menu-lateral #header #title, #menu-lateral #header #menu-btn{
+    vertical-align: middle;
+}
+#menu-lateral #header #menu-btn{
+    display: inline-block;
+}
+#menu-lateral #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 65px;
+    padding-top: 30px;
+    width: 80px;
+    box-sizing: border-box;
+}
+#menu-lateral #header #menu-btn:hover{
+    color: #b7deee;
+}
+
+                /* ITEMS */
+
+#menu-lateral #menu-items{
+    overflow: hidden;
+}
+#menu-lateral #menu-items .item{
+    width: 300px;
+}
+#menu-lateral #menu-items .item .icon{
+    display: inline-block;
+}
+#menu-lateral #menu-items .item .iconrol{
+    display: inline-block;
+}
+#menu-lateral #menu-items .item .icon,
+#menu-lateral #menu-items .item .title {
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#menu-lateral #menu-items .item .iconrol,
+#menu-lateral #menu-items .item .titlerol{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+#menu-lateral #menu-items .item Link{
+    display: block;
+}
+#menu-lateral #menu-items .item :hover{
+    background-color: #555353;
+    border-left: 3px solid #ffffff;
+
+}
+#menu-lateral #menu-items .item .icon{
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 30px;
+    width: 80px;
+}
+#menu-lateral #menu-items .item .iconrol{
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 85px;
+    padding-left: 30px;
+    width: 80px;
+}
+/* #menu-lateral #menu-items .item .icon {
+    width: 100vh;
+} */
+#menu-lateral #menu-items .item .title{
+    padding: 10px;
+    padding-left: 30px;
+}
+#menu-lateral #menu-items .item .titlerol{
+    padding: 10px;
+    padding-top: 85px;
+    padding-left: 30px;
+}
+
+.menu-expanded{
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.menu-expanded #header #title{
+    display: inline-block;
+    width: calc(100% - 80px);
+    margin-right: -5px;
+    padding: 10px;
+}
+.menu-expanded #header #title p{
+    width: calc((300px - 80px) - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+.menu-collapsed{
+    width: 80px;
+}
+.menu-collapsed #header #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+.menu-collapsed .item{
+    width: 100px;
+}
+
+
+
+/* ############################################################### */
+/* .menu-collapsed{
+    
+} */
+/* .text{
+    text-decoration:none;
+    /* color: #b7deee; */
+    /* padding-bottom: 25px; 
+    padding-left: 30px;
+    text-align:left;
+} */ 
+/* .textlogo{
+    color: #ffffff;
+    padding-left: 27px;
+    text-align:left;
+    font-size: 12px;
+}
+.textlogo1{
+    color: #ffffff;
+    padding-left: 27px;
+    padding-top: 32px;
+    text-align:left;
+    font-size: 16px;
+}
+.modulos{
+    display: flex;
+}
+.logos{
+  padding-left: 30px;  
+  color: #ffffff;
+  padding-top: 3px;
+}
+.iconologo{
+    padding-left: 25px;  
+    color: #ffffff;
+    padding-top: 40px; 
+    padding-bottom: 65px;
+}
+.text :hover{
+    text-decoration:none;
+    color: #ffffff;
+}
+
+
+ */

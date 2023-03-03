@@ -1,8 +1,10 @@
 import Navbar from "../components/navbar";
 
 export default function Providers(){
-    <div>
+    return(
+    <div className="flex">
         <Navbar/>
         <h1>HOlaaaaaaaa</h1>
     </div>
+    )
 }
