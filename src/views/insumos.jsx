@@ -6,10 +6,7 @@ export default function Insumo(){
         <div >
           <div className="flex">
             <Navbar /> 
-            <h1>Bienvenido al modulo insumos</h1>
-            <div>
-              <Navbar /> 
-              <Cabecera /> 
+            <Cabecera /> 
             </div>
         </div>
     )

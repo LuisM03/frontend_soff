@@ -8,8 +8,10 @@ export default function Pedido(){
             <Navbar /> 
             <h1>Bienvenido a modulo pedidos</h1>
             <div>
-              <Cuerpo /> 
+                {/* <Navbar />  */}
+                <Cuerpo /> 
             </div>
+              <Cuerpo /> 
           </div>
         </div>
     )
