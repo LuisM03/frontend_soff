@@ -1,4 +1,4 @@
-// import Navbar from "../components/navbar"
+import Navbar from "../components/navbar"
 import Cabecera from "../components/cabecera"
 
 export default function Insumo(){
@@ -7,8 +7,9 @@ export default function Insumo(){
             <Navbar /> 
             <h1>Bienvenido al modulo insumos</h1>
         <div>
-            {/* <Navbar />  */}
+             <Navbar /> 
             <Cabecera /> 
+        </div>
         </div>
     )
 }
