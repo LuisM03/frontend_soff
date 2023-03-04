@@ -7,25 +7,17 @@ export default function Cabecera(){
     return(
         <div className="header">
             
-        <div className="flecha">
-        <Vector1 />
-        <p>Hola marcus 👋</p>
-        
-        </div>
-
-        <div className="img-2">
-        <Campana/>
-        <div className="user">
-        <Avatar/>
+            <div className="flecha">
+            <Vector1 />
+            <p class="ttp01">Hola marcus 👋</p>
             </div>
-        </div>
-        
-        
-            
 
-            
-        
-            
+            <div className="img-2">
+            <Campana/>
+            <div className="user">
+            <Avatar/>
+                </div>
+            </div>     
 
         </div>
     )
