@@ -3,12 +3,13 @@ import Cabecera from "../components/cabecera"
 
 export default function Insumo(){
     return (
-        <div className="flex">
-            <Navbar /> 
-            <h1>Bienvenido al modulo insumos</h1>
-        <div>
+        <div >
             {/* <Navbar />  */}
+            {/* <h1>Bienvenido al modulo insumos</h1> */}
+            
+                {/* <Navbar />  */}
             <Cabecera /> 
+            
         </div>
     )
 }
