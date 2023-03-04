@@ -3,12 +3,14 @@ import Cuerpo from "../components/cuerpo"
 
 export default function Pedido(){
     return (
-        <div className="flex">
+        <div>  
+          <div className="flex">
             <Navbar /> 
             <h1>Bienvenido a modulo pedidos</h1>
-        <div>
-            <Cuerpo /> 
-        </div>
+            <div>
+              <Cuerpo /> 
+            </div>
+          </div>
         </div>
     )
 }
