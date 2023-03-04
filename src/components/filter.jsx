@@ -1,21 +1,24 @@
 import Lupa from "./icons/lupa"
 import Vector from "./icons/vector"
-import Flechabaja from "./icons/flecha-abajo"
 import Flechaizquierda from "./icons/flecha-izquierda"
 
 export default function Filter(){
     return(
         <div className="flex w-full p-3">
             <form className="flex">
-                <div className="flex filtro p-4 items-center text-[#757575] rounded h-12 border border-solid border-1 border-[#757575]">
+                <div className="flex p-4 items-center text-[#757575] rounded h-12 border border-solid border-1 border-[#757575]">
                     <Lupa/>
                     <input id="" type="text"  placeholder="Filtrar busqueda..." className="ml-2"/>
                 </div>
 
-                <div className="flex filtro p-4 items-center ml-4 text-[#757575] rounded h-12 border border-solid border-1 border-[#757575]">
+                <div className="flex p-4 items-center ml-4 text-[#757575] rounded h-12 border border-solid border-1 border-[#757575]">
                     <Vector/>
-                    <input id="" type="text" placeholder="Ordenar por" className="ml-2"/>
-                    <Flechabaja/>
+                    <label className="ml-2">Ordenar por</label>
+                    <select name="" id="">
+                        <option value="">Fecha</option>
+                        <option value="">N° de ordenes</option>
+                        <option value="">Estado</option>
+                    </select>
                 </div>
             </form>
 
