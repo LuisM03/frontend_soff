@@ -13,6 +13,7 @@ import InconoRecetas from "./icons/iconorecetas"
 import InconoProveedor from "./icons/iconoproveedor"
 import InconoRoles from "./icons/iconoroles"
 // import React from "react"
+import "./styles/style-cabecera.css"
 export default function Navbar(){
 
     useEffect(() => {
