@@ -1,4 +1,5 @@
 import Filter from "../components/filter"
+import Navbar from "../components/navbar"
 
 export default function Compras(){
     return (
@@ -8,6 +9,7 @@ export default function Compras(){
         <div>
             <Filter/>
             
+        </div>
         </div>
     )
 } 
