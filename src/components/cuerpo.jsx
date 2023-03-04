@@ -1,13 +1,13 @@
-import "./styles/style-cuerpo.css"
+// import "./styles/style-cuerpo.css"
 import Time from "./icons/Time"
 export default function Cuerpo(){
     return(
-        <div className="cuerpo">
-            <div className="name-modulo">
-                <p class="ttp02">Pedido</p>
+        <div className="w-full h-[60px] flex justify-between items-center">
+            <div className="ml-[20px]">
+                <p className="text-[20px] text-[#757575]">Pedido</p>
             </div>
 
-            <div className="time">
+            <div className="mr-[60px]">
                 <Time/>
             </div>
         </div>

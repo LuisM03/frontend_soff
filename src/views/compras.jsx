@@ -5,13 +5,10 @@ import Order from "../components/order"
 export default function Compras(){
     return (
         <div>
-                <Order/>
-                {/* <Navbar/>
-                <h1>Hola compras</h1> */}
-            <div>
-                <Filter/>
-                
-            </div>
+          <Order/>
+          {/* <Navbar/>
+          <h1>Hola compras</h1> */}
+          <div>
+              <Filter/>
+          </div>
         </div>
-    )
-} 
