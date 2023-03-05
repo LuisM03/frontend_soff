@@ -7,6 +7,7 @@ import Cabecera from "../components/cabecera"
 export default function Providers(){
     return(
         <div className="flex h-screen w-screen border-2 border-black " >
+            {/* <Navbar/> */}
           <div className="inline-block  w-full h-full relative ">
             <Cabecera/>
             <Cuerpo/>

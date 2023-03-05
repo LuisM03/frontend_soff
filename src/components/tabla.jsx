@@ -17,7 +17,9 @@ export default function Tabla(){
                     <th><h4>CANIDAD DE ORDENES</h4></th>
                     <th><h4>FECHA DE VENTA</h4></th>
                     <th><h4>METODO DE PAGO</h4></th>
-                    <th><h4>TOTAL</h4></th>                   
+                    <th><h4>TOTAL</h4></th> 
+                    <th></th>
+                    <th></th>                  
                     <th><h4>ESTADO</h4></th>
                     <th className="w-[20%] text-right pr-[60px]" >Acciones</th>
 
@@ -31,7 +33,9 @@ export default function Tabla(){
                     <th><p>21-11-2022 02:07 AM</p></th>
                     <th><p>Transferencia</p></th>
                     <th><p>$56.000</p></th>
-                    <th>
+                    <th></th>
+                    <th></th>
+                    <th className="">
                         <button className="bg-[#4CAF50] w-[48px] h-[15px] text-[10px] text-[#fff] rounded-[11px] font-medium ">
                         Activo
                         </button>
@@ -56,6 +60,8 @@ export default function Tabla(){
                     <th><p>21-11-2022 02:07 AM</p></th>
                     <th><p>Transferencia</p></th>
                     <th><p>$56.000</p></th>
+                    <th></th>
+                    <th></th>
                     <th>
                         <button className="bg-[#006FF1] w-[48px] h-[15px] text-[10px] text-[#fff] rounded-[11px] font-medium ">
                         Inactivo

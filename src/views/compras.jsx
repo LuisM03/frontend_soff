@@ -12,3 +12,5 @@ export default function Compras(){
               <Filter/>
           </div>
         </div>
+    )
+}
