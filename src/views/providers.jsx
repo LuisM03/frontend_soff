@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar"
+// import Navbar from "../components/navbar"
 import Tabla from "../components/tabla"
 import Filter from "../components/filter"
 import Cuerpo from "../components/cuerpo"

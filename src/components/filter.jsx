@@ -2,7 +2,7 @@ import Lupa from "./icons/lupa"
 import Vector from "./icons/vector"
 import Flechaizquierda from "./icons/flecha-izquierda"
 
-export default function Filter(){
+export default function Filter(props){
     return(
         <div className="flex w-full p-3">
             <form className="flex">
@@ -23,13 +23,13 @@ export default function Filter(){
             </form>
 
             <div className="p-4 flex items-center ml-4 text-[#0453F4] rounded h-12 border border-solid border-1 border-[#0453F4]">
-                <button>Generar reporte de ventas</button>
+                <button>Generar reporte de {props.modulo}</button>
             </div>
 
             <div className=" p-4 flex ml-auto bg-[#0453F4] text-white rounded h-12">
                 <button className="flex items-center">
                     <Flechaizquierda/>
-                    <label className="ml-2">Regresar a vender</label>
+                    <label className="ml-2">{props.boton_agregar}</label>
                 </button> 
             </div>
         </div>
