@@ -1,9 +1,9 @@
-import Navbar from "../components/navbar"
+import Sidebar from "../components/sidebar/sidebar"
 
 export default function Receta(){
     return (
         <div className="flex">
-            <Navbar/>
+            <Sidebar/>
             <h1>Hola recetas</h1>
         </div>
     )

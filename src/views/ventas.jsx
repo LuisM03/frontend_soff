@@ -1,9 +1,9 @@
-import Navbar from "../components/navbar"
+import Sidebar from "../components/sidebar/sidebar"
 
 export default function Ventas(){
     return (
         <div className="flex">
-            <Navbar /> 
+            <Sidebar />
             <h1>Hola perros de ventas</h1>
         </div>
     )

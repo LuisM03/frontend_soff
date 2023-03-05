@@ -1,14 +1,15 @@
 import Filter from "../components/filter"
-// import Navbar from "../components/navbar"
+import Sidebar from "../components/sidebar/sidebar"
 import Order from "../components/order"
 
 export default function Compras(){
     return (
-        <div>
-          <Order/>
-          {/* <Navbar/>
-          <h1>Hola compras</h1> */}
+        <div className="flex">
+          <Sidebar />
           <div>
+            <Order/>
               <Filter/>
           </div>
         </div>
+  )
+}
