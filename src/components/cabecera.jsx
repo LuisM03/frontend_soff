@@ -1,32 +1,18 @@
-// import "./styles/style-cabecera.css"
-import Vector1 from "./icons/Vector1"
 import Avatar from "./icons/Avatar"
+import IconNotification from "./Navbar/icons_navbar/icon_notification"
 
-import Campana from "./icons/Campana"
-export default function Cabecera(){
+export default function Cabecera(props){
     return(
-        <div className="w-full h-[60px] flex justify-between items-center">
-            
-            <div className="flex">
-                <div className="flex justify-center items-center mr-[20px]" >
-                    <Vector1 />
-
+        <div className="w-full h-[60px] flex justify-between items-center bg-white">
+            <p className="text-[15px] ml-4 ">Hola {props.username} {props.lastname} 👋</p>
+            <div className="flex mr-4">
+                <div className="mr-[20px] flex justify-center items-center">
+                    <IconNotification/>
                 </div>
-                    <div className="flex justify-center items-center mr-[20px]">
-                        <p className="text-[15px]">Hola marcus 👋</p>
-                    </div>
-            </div>
-            
-
-        <div className="flex mr-[60px]">
-            <div className="mr-[20px] flex justify-center items-center">
-                <Campana/>
-            </div>
                 <div>
-                    <Avatar/>
+                    <Avatar image="https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
                 </div>         
-                
-        </div>     
+            </div>     
 
         </div>
     )

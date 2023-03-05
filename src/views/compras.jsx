@@ -4,11 +4,11 @@ import Order from "../components/order"
 
 export default function Compras(){
     return (
-        <div className="flex">
+        <div className="flex bg-[#F2F2F2]">
           <Sidebar />
           <div>
-            <Order/>
-              <Filter/>
+            <Order name="Agregar insumo"/>
+            <Filter/>
           </div>
         </div>
     )

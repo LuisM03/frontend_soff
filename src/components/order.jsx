@@ -26,7 +26,7 @@ export default function Order(props){
 
             <div className=" p-4 flex ml-4 bg-[#0453F4] text-white rounded h-12">
                 <button className="flex items-center">
-                    <label>{props.boton_agregar}</label>
+                    <label>{props.name}</label>
                 </button> 
             </div>
         </div>
