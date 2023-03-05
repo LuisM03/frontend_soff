@@ -1,4 +1,4 @@
-export default function Order(){
+export default function Order(props){
     return(
         <div className="flex w-full p-3">
             <form className="flex">
@@ -26,7 +26,7 @@ export default function Order(){
 
             <div className=" p-4 flex ml-4 bg-[#0453F4] text-white rounded h-12">
                 <button className="flex items-center">
-                    <label>Agregar Insumo</label>
+                    <label>{props.boton_agregar}</label>
                 </button> 
             </div>
         </div>
