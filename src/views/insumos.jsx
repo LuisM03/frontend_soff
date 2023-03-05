@@ -1,11 +1,11 @@
-import Navbar from "../components/navbar"
+import Sidebar from "../components/sidebar/sidebar"
 import Cabecera from "../components/cabecera"
 
 export default function Insumo(){
     return (
         <div >
           <div className="flex">
-            <Navbar /> 
+            <Sidebar /> 
             <Cabecera /> 
             </div>
         </div>
