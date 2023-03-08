@@ -13,8 +13,9 @@ export default function Filter(props){
 
                 <div className="flex p-4 items-center ml-4 text-[#757575] rounded h-12 border border-solid border-[#757575] bg-[#F8F8F8]">
                     <Vector/>
-                    <label className="ml-2">Ordenar por</label>
-                    
+                    <button className="flex items-center">
+                        <label className="ml-2 hover:text-black">Ordenar por</label>
+                    </button> 
                 </div>
             </form>
 
@@ -22,7 +23,7 @@ export default function Filter(props){
                 <button>Generar reporte de {props.modulo}</button>
             </div>
 
-            <div className=" p-4 flex ml-auto bg-[#0453F4] text-white rounded h-12">
+            <div className="p-4 flex ml-auto bg-[#0453F4] text-white rounded h-12">
                 <button className="flex items-center">
                     <Flechaizquierda/>
                     <label className="ml-2">{props.name}</label>
