@@ -1,19 +1,26 @@
 import Sidebar from "../components/sidebar/sidebar"
-import TablaCompras from "../components/tablaCompras"
-import Filter from "../components/filter"
+import Order from "../components/order"
 import Footer from "../components/login_components/footer_login"
 import Cuerpo from "../components/cuerpo"
 import Cabecera from "../components/cabecera"
+import TablaOrder from "../components/tablaOrder"
 
-export default function Compras(){
+export default function Addcompras(){
     return(
         <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
           <Sidebar />
           <div className="w-full relative ml-16">
             <Cabecera/>
-            <Cuerpo modulo="Compras" />
-            <Filter name="Agregar Compra" modulo="compras" action={()=>{window.location.href = "/addcompras"}}/>
-            <TablaCompras/>
+            <Cuerpo modulo="Ordenes" />
+            <div className="flex">
+              <div>
+              <Order name="Agregar Insumo"/>
+              <TablaOrder/>
+              </div>
+              <div >
+                <p>FACTURA</p>
+              </div>
+            </div>
             <Footer />
           </div> 
         </div>
