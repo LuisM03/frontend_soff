@@ -18,7 +18,7 @@ export default function Sidebar(){
     const [open, setOpen] = useState(true)
 
     return (
-        <div className={`bg-[#0453F4] min-h-screen ${!open ? "w-64":"w-16"} duration-500 px-4 text-[#B4CBFC] flex flex-col gap-4 relative justify-between`}>
+        <div className={`bg-[#0453F4] h-screen  min-h-screen ${!open ? "w-64":"w-16"} duration-500 px-4 text-[#B4CBFC] flex flex-col gap-4 fixed z-10 justify-between`}>
             <div className="">
                 <div className="mt-4 flex flex-col gap-4 relative">
                     <div className="flex items-center front-medium py-2 hover:text-white" >

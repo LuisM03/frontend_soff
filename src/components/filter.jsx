@@ -1,31 +1,31 @@
 import Lupa from "./icons/lupa"
 import Vector from "./icons/vector"
-import Flechaizquierda from "./icons/flecha-izquierda"
 
 export default function Filter(props){
     return(
-        <div className="flex max-w-[1200px] mx-auto mb-4">
+        <div className="flex items-center max-w-[1400px] mx-auto sm:px-4 mb-10">
             <form className="flex">
-                <div className="flex p-4 items-center text-[#757575] rounded h-12 border border-solid border-[#757575] bg-[#F8F8F8]">
+                <div className="flex px-4 py-2 items-center text-[#757575] rounded border bg-[#F8F8F8]">
                     <Lupa/>
-                    <input id="" type="text"  placeholder="Filtrar busqueda..." className="ml-2 bg-[#F8F8F8]"/>
+                    <input id="" type="text"  placeholder="Filtrar busqueda..." className="outline-0 ml-2 bg-[#F8F8F8] h-full"/>
                 </div>
 
-                <div className="flex p-4 items-center ml-4 text-[#757575] rounded h-12 border border-solid border-[#757575] bg-[#F8F8F8]">
+                <div className="flex px-4 py-2 items-center ml-4 text-[#757575] rounded  border bg-[#F8F8F8]">
                     <Vector/>
                     <label className="ml-2">Ordenar por</label>
                     
                 </div>
             </form>
 
-            <div className="p-4 flex items-center ml-4 text-[#0453F4] rounded h-12 border border-solid border-1 border-[#0453F4] bg-white">
+            <div className="px-4 py-2 flex items-center ml-4 text-[#0453F4] rounded border border-solid border-1 border-[#0453F4] bg-white">
                 <button>Generar reporte de {props.modulo}</button>
             </div>
 
-            <div className=" p-4 flex ml-auto bg-[#0453F4] text-white rounded h-12">
-                <button className="flex items-center">
-                    <Flechaizquierda/>
-                    <label className="ml-2">{props.name}</label>
+            <div className=" py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded">
+                <button className="flex items-center ">
+                    <p>
+                        {props.name}
+                    </p>
                 </button> 
             </div>
         </div>
