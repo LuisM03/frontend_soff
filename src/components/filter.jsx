@@ -26,6 +26,7 @@ export default function Filter(props){
                     <p>
                         {props.name}
                     </p>
+                </button>
             </div>
         </div>
     )
