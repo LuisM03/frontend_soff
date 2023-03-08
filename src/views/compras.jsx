@@ -1,6 +1,7 @@
 import Filter from "../components/filter"
 import Sidebar from "../components/sidebar/sidebar"
 import Order from "../components/order"
+import FilterOrder from "../components/filter-order"
 
 export default function Compras(){
     return (
@@ -10,6 +11,7 @@ export default function Compras(){
             <Order name="Agregar insumo"/>
             <Filter/>
           </div>
+          <FilterOrder/>
         </div>
     )
 }

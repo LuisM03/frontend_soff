@@ -3,7 +3,7 @@ export default function Order(props){
         <div className="flex w-full p-3">
             <form className="flex">
                 <div className="flex p-4 items-center text-[#757575] rounded h-12 border border-solid border-1 border-[#757575]">
-                    <select id="" name="" >
+                    <select id="" name="">
                         <option hidden selected>Proveedor</option>
                         <option value="">S.A.S CARNE</option>
                         <option value="">Postobon</option>
