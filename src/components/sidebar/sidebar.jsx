@@ -12,6 +12,7 @@ import IconInsumos from "./icons_sidebar/icon_insumos"
 import IconProductos from "./icons_sidebar/icon_productos"
 import IconProveedores from "./icons_sidebar/icon_proveedores"
 import IconUsuarios from "./icons_sidebar/icon_usuarios"
+import InconRecetas from "./icons_sidebar/icon_recetas"
 
 export default function Sidebar(){
 
@@ -61,6 +62,12 @@ export default function Sidebar(){
                             <IconProductos color="#B4CBFC"/>
                         </div>
                         <h2 className={`whitespace-pre duration-500 ${open && "opacity-0 overflow-hidden"}`}>Productos</h2>
+                    </Link>
+                    <Link to={"/recetas"} className="flex items-center gap-3.5 front-medium py-2 hover:text-white">
+                        <div>
+                            <InconRecetas color="#B4CBFC"/>
+                        </div>
+                        <h2 className={`whitespace-pre duration-500 ${open && "opacity-0 overflow-hidden"}`}>Recetas</h2>
                     </Link>
                     <Link to={"/providers"} className="flex items-center gap-3.5 front-medium py-2 hover:text-white">
                         <div>
