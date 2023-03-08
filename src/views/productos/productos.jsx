@@ -3,7 +3,7 @@ import Cabecera from "../../components/cabecera"
 import Cuerpo from "../../components/cuerpo"
 import Filter from "../../components/filter"
 import Footer from "../../components/login_components/footer_login"
-import TablaProductos from "../../components/tablaProductos"
+import TablaProductos from "../../components/tablas/tablaProductos"
 import Registro from "../../components/registro"
 
 export default function Producto(){

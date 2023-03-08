@@ -1,5 +1,5 @@
-import IconEye from "./icons/icon_eye"
-import IconToggle from "./icons/icon_toggle"
+import IconEye from "../icons/icon_eye"
+import IconToggle from "../icons/icon_toggle"
 
 export default function Tabla(props){
 
@@ -21,8 +21,12 @@ export default function Tabla(props){
             "metodo_pago": "Efectivo",
             "total": "$300.000",
             "estado": "inactivo"
+        },{
+
         }
     ]
+
+    const listHeaders = []
 
     return (
         <div className="max-w-[1400px] mx-auto sm:px-4" >
