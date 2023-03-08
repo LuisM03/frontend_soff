@@ -12,21 +12,20 @@ export default function Filter(props){
 
                 <div className="flex px-4 py-2 items-center ml-4 text-[#757575] rounded  border bg-[#F8F8F8]">
                     <Vector/>
-                    <label className="ml-2">Ordenar por</label>
-                    
+                    <button className="flex items-center">
+                        <label className="ml-2 hover:text-black">Ordenar por</label>
+                    </button> 
                 </div>
             </form>
 
             <div className="px-4 py-2 flex items-center ml-4 text-[#0453F4] rounded border border-solid border-1 border-[#0453F4] bg-white">
                 <button>Generar reporte de {props.modulo}</button>
             </div>
-
             <div className=" py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded">
                 <button className="flex items-center ">
                     <p>
                         {props.name}
                     </p>
-                </button> 
             </div>
         </div>
     )
