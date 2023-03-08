@@ -9,8 +9,8 @@ export default function Providers(){
     return(
         <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
           <Sidebar />
-          <div className="inline-block w-full relative ">
-            <Cabecera username="José Luis" lastname="Guzman"/>
+          <div className="w-full relative ml-16">
+            <Cabecera/>
             <Cuerpo modulo="Proveedores" />
             <Filter name="Agregar proveedor" modulo="proveedores"/>
             <Tabla/>
