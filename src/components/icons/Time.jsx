@@ -15,7 +15,7 @@ export default function Time(){
 
     return(
         <div>
-            <h1 className="font-semibold">{hora}:{minutos} PM</h1>
+            <h1 className="font-semibold">{hora}:{minutos} hrs.</h1>
         </div>
     )
 }
