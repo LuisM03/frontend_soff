@@ -1,13 +1,21 @@
 import Filter from "../components/filter"
-import FilterOrder from "../components/filter-order"
-// import Sidebar from "../components/sidebar/sidebar"
+import Sidebar from "../components/sidebar/sidebar"
+import Cabecera from "../components/cabecera"
+import Cuerpo from "../components/cuerpo"
+import TablaRecetas from "../components/tablaRecetas"
+import Footer from "../components/login_components/footer_login"
 
 export default function Receta(){
     return (
-        <div >
-            <Filter/>
-            <FilterOrder/>
-            {/* <h1>Hola recetas</h1> */}
-        </div>
+        <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
+        <Sidebar />
+        <div className="w-full relative ml-16">
+          <Cabecera/>
+          <Cuerpo modulo="Recetas" />
+          <Filter name="Agregar receta" modulo="Recetas"/>
+          <TablaRecetas/>
+          <Footer />
+        </div> 
+      </div>
     )
 }
