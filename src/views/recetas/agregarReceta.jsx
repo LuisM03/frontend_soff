@@ -1,4 +1,3 @@
-import Filter from "../../components/filter"
 import Sidebar from "../../components/sidebar/sidebar"
 import Cabecera from "../../components/cabecera"
 import Cuerpo from "../../components/cuerpo"
