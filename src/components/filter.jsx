@@ -25,7 +25,7 @@ export default function Filter(props){
             <div className="px-4 py-2 flex items-center ml-4 text-[#0453F4] rounded border border-solid border-1 border-[#0453F4] bg-white">
                 <button>Generar reporte de {props.modulo}</button>
             </div>
-                <button className="flex items-center py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded"  onClick={props.action}>
+                <button className="flex items-center py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded"  onClick={props.activeModal}>
                     <p>
                         {props.name}
                     </p>
