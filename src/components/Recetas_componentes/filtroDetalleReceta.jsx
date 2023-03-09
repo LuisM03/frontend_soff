@@ -4,7 +4,7 @@ export default function FiltroDetalleReceta(){
             <form className="flex">
                 <div className="flex pb-3">
                     <input type="text"  placeholder="Nombre"
-                    className=" w-full flex p-4 pr-10 items-center placeholder:text-[#757575] bg-[#F8F8F8] 
+                    className=" w-full flex p-4 pr-6 items-center placeholder:text-[#757575] bg-[#F8F8F8] 
                     rounded h-12 border border-solid border-1 border-[#757575] "/>
                     <input type="text"  placeholder="Categoría"
                     className=" w-full flex p-4 ml-6 items-center placeholder:text-[#757575] bg-[#F8F8F8] 
@@ -31,9 +31,9 @@ export default function FiltroDetalleReceta(){
                                 rounded h-12 border border-solid border-1 border-[#757575] "/>
                                 </div>
                         
-                    <div className=" p-4 flex ml-4 bg-[#0453F4] text-white rounded h-12">
+                    <div className=" p-4 flex ml-[222px] bg-[#0453F4] text-white rounded h-12">
                         <button className="flex items-center">
-                            <label>Agregar insumo</label>
+                            <p>Agregar insumo</p>
                         </button> 
                     </div>
                 </div>
