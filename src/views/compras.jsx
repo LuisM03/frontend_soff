@@ -25,7 +25,7 @@ export default function Compras(){
             <TablaCompras activeModal={toggle}/>
             <Footer />
           </div> 
-          <Modal active={active} toggle={toggle} heigth="max-h-[450px]" width="w-[580px]">
+          <Modal active={active} toggle={toggle} heigth="max-h-[450px]" width="w-[570px]">
                 <TablaOrderCompra/> 
             </Modal>
         </div>
