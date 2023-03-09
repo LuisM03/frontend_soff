@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Dashboard from "./views/dashboard"
 import Insumo from "./views/insumos";
 import Pedido from "./views/pedidos";
 import Ventas from "./views/ventas";
@@ -6,6 +7,7 @@ import Producto from "./views/productos/productos";
 import Receta from "./views/recetas";
 import Usuarios from "./views/usuarios";
 import Compras from "./views/compras";
+import Addcompras from "./views/addcompras"
 import Providers from "./views/providers";
 
 import Login from "./views/inicio_sesion/login";
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Login />
+    },
+    {
+        path: "/dashboard",
+        element: <Dashboard />
     },
     {
         path: "/ventas",
@@ -47,6 +53,10 @@ const router = createBrowserRouter([
     {
         path: "/compras",
         element: <Compras />
+    },
+    {
+        path: "/addcompras",
+        element: <Addcompras />
     },
     {
         path: "/providers",
