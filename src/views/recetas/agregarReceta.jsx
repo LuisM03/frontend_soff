@@ -4,6 +4,7 @@ import Cuerpo from "../../components/cuerpo"
 import Footer from "../../components/login_components/footer_login"
 import FiltroDetalleReceta from "../../components/Recetas_componentes/filtroDetalleReceta"
 import TablaDetalleReceta from "../../components/tablas/tablaDetalleReceta"
+import FacturaDetalleReceta from "../../components/Recetas_componentes/facturaDetalleReceta"
 
 export default function AddReceta(){
     return (
@@ -13,12 +14,12 @@ export default function AddReceta(){
             <Cabecera/>
             <Cuerpo modulo="Recetas" />
             <div className="flex">
-                <div className="w-[60%] ml-16">
+                <div className="w-[70%] ml-16">
                   <FiltroDetalleReceta/>
                   <TablaDetalleReceta/>
                 </div>
-                <div >
-                  <p>FACTURA</p>
+                <div className="w-[20%] h-[20%] mt-[150px]">
+                  <FacturaDetalleReceta />
                 </div>
             </div>
             <Footer />
