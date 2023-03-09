@@ -1,24 +1,29 @@
-import IconEye from "./icons/icon_eye"
-import IconToggle from "./icons/icon_toggle"
+import IconEye from "../icons/icon_eye"
+import IconEdit from "../icons/icon_edit"
+import IconToggle from "../icons/icon_toggle"
 
-export default function TablaCompras(props){
+export default function Tabla(props){
 
     const data = [
         {
             "id": "0001",
-            "fecha": "21-11-2023 02:07 PM",
-            "cantidad_ordenes": 2,
-            "proveedor": "VERDU-HIT",
-            "total": "$88.000",
+            "fecha_pedido": "21-11-2023 02:07 PM",
+            "cantidad_ordenes": "8",
+            "cliente": "Pepito Pérez",
+            "direccion": "Cll 35 # 105 - 25",
+            "telefono": "321 5698 2545",
+            "domiciliario": "Jaider Cuartas",
             "estado": "activo"
         },
         {
             "id": "0002",
-            "fecha": "21-11-2023 02:07 PM",
-            "cantidad_ordenes": 4,
-            "proveedor": "Morenos S.A.S",
-            "total": "$76.000",
-            "estado": "Inactivo"
+            "fecha_pedido": "21-11-2023 03:07 PM",
+            "cantidad_ordenes": "12",
+            "cliente": "Fulano Perensejo",
+            "direccion": "Cll # 104 - 30",
+            "telefono": "301 254 8923",
+            "domiciliario": "Didier Castañeda",
+            "estado": "inactivo"
         }
     ]
 
@@ -27,12 +32,14 @@ export default function TablaCompras(props){
             <div className="">
             <table className="bg-white w-full h-[500px] relative">
                 <tr className="bg-[#F8F8F8] h-11 w-[1200px] text-[13px] text-[#484848] text-left">
-                    <th className="pl-4 min-w-[150px]"><h4>ID COMPRAS</h4></th>
-                    <th><h4>FECHA DE COMPRA</h4></th>
-                    <th><h4>CANIDAD DE ORDENES</h4></th>
-                    <th className="w-[200px]"><h4>PROVEEDOR</h4></th>
-                    <th className="w-[180px]"><h4>TOTAL</h4></th>                 
-                    <th className="w-[210px]"><h4>ESTADO</h4></th>
+                    <th className="pl-5 min-w-[110px]"><h4>ID PEDIDO</h4></th>
+                    <th className="w-[200px] ">  <h4>FECHA DE PEDIDO</h4></th>
+                    <th className="w-[300px] pl-[8px]"><h4>CANTIDAD DE ORDENES</h4></th>
+                    <th className="w-[210px] pl-[8px]"><h4>CLIENTE</h4></th>
+                    <th className="w-[210px] pl-[8px]"><h4>DIRECCION</h4></th>
+                    <th className="w-[210px] pl-[8px]"><h4>TELEFONO</h4></th>
+                    <th className="w-[210px] pl-[8px]"><h4>DOMICILIARIO</h4></th>                   
+                    <th className="w-[80px] pl-[8px]"><h4>ESTADO</h4></th>
                     <th className="w-[20%] text-right pr-[60px]" ><h4>ACCIONES</h4></th>
                 </tr>
                 {data.map(item => (
@@ -41,19 +48,21 @@ export default function TablaCompras(props){
                         
 
                     <td className="pl-[18px] w-[11px]">{item.id}</td>
-                    <td ><p>{item.fecha}</p></td>
-                    <td><p>{item.cantidad_ordenes}</p></td>
-                    <td><p>{item.proveedor}</p></td>
-                    <td><p>{item.total}</p></td>
+                    <td className="w-[300px] pl-[8px]"><p>{item.fecha_pedido}</p></td>
+                    <td className="pl-[8px]"><p>{item.cantidad_ordenes}</p></td>
+                    <td className="pl-[8px]"><p>{item.cliente}</p></td>
+                    <td className="pl-[8px]"><p>{item.direccion}</p></td>
+                    <td className="pl-[8px]"><p>{item.telefono}</p></td>
+                    <td className="pl-[8px]"><p>{item.domiciliario}</p></td>
                     <td>
 
                     {
                         item.estado === "activo" ? (
-                            <button className="bg-green-500 py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px] ">
+                            <button className="bg-green-500 py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px]">
                                 Activo
                             </button>
                         ): (
-                            <button className="bg-[#006FF1] py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px]">
+                            <button className="bg-[#006FF1] py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px] ">
                                 Inactivo
                             </button>
                         )
@@ -61,12 +70,16 @@ export default function TablaCompras(props){
                     </td>
                     
                     <td className=" text-right pr-[30px] flex justify-end"> 
-                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" onClick={props.activeModal}>
+                    <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
+                        <IconEdit />
+                        </button>
+                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
                             <IconEye />
                         </button>
                         <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
-                            <IconToggle />
+                        <IconToggle />
                         </button>
+                        
                     </td>
 
                 </tr>

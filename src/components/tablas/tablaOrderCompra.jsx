@@ -1,5 +1,5 @@
-import IconEye from "./icons/icon_eye"
-import IconToggle from "./icons/icon_toggle"
+import IconEye from "../icons/icon_eye"
+import IconToggle from "../icons/icon_toggle"
 
 export default function TablaOrderCompra(props){
 
