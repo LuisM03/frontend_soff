@@ -4,11 +4,12 @@ import Insumo from "./views/insumos";
 import Pedido from "./views/pedidos";
 import Ventas from "./views/ventas";
 import Producto from "./views/productos/productos";
-import Receta from "./views/recetas";
+import Receta from "./views/recetas/recetas";
 import Usuarios from "./views/usuarios";
 import Compras from "./views/compras";
 import Addcompras from "./views/addcompras"
 import Providers from "./views/providers";
+import AddReceta from "./views/recetas/agregarReceta";
 
 import Login from "./views/inicio_sesion/login";
 import RecuperarContraseña from "./views/inicio_sesion/recuperar_contraseña";
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
     {
         path: "/recetas",
         element: <Receta />
+    },
+    {
+        path:"/addRecipe",
+        element: <AddReceta/>
     },
     {
         path: "/usuarios",
