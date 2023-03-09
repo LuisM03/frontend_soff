@@ -1,4 +1,5 @@
 import Sidebar from "../components/sidebar/sidebar"
+import Tabla from "../components/tablas/tabla"
 import TablaProveedores from "../components/tablaproveedores"
 import Filter from "../components/filter"
 import Footer from "../components/login_components/footer_login"
