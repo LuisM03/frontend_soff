@@ -1,58 +1,54 @@
-import IconEye from "../icons/icon_eye"
-import IconToggle from "../icons/icon_toggle"
+import IconEye from "./icons/icon_eye"
+import IconToggle from "./icons/icon_toggle"
 
 export default function Tabla(props){
 
     const data = [
         {
             "id": "0001",
-            "vendedor": "Ximena Arrieta",
-            "cantidad_ordenes": 23,
-            "fecha": "21-11-2023 02:07 AM",
-            "metodo_pago": "Transferencia",
-            "total": "$69.000",
+            "nombre": "Carne",
+            "fecha_caducidad": "21-11-2022 02:07 AM",
+            "cantidad_stock": "10",
+            "medidas": "Kg",
+            "precio": "$22.000",
             "estado": "activo"
         },
         {
             "id": "0002",
-            "vendedor": "Alejandra Soto",
-            "cantidad_ordenes": 34,
-            "fecha": "21-11-2023 02:10 AM",
-            "metodo_pago": "Efectivo",
-            "total": "$300.000",
+            "nombre": "Salchicha",
+            "fecha_caducidad": "21-11-2022 02:07 AM",
+            "cantidad_stock": "32",
+            "medidas": "Unidad",
+            "precio": "$76.000",
             "estado": "inactivo"
-        },{
-
         }
     ]
-
-    const listHeaders = []
 
     return (
         <div className="max-w-[1400px] mx-auto sm:px-4" >
             <div className="">
             <table className="bg-white w-full h-[500px] relative">
                 <tr className="bg-[#F8F8F8] h-11 w-[1200px] text-[13px] text-[#484848] text-left">
-                    <th className="pl-4 min-w-[150px]"><h4>ID VENTAS</h4></th>
-                    <th><h4>VENDEDOR</h4></th>
-                    <th><h4>CANIDAD DE ORDENES</h4></th>
-                    <th><h4>FECHA DE VENTA</h4></th>
-                    <th><h4>METODO DE PAGO</h4></th>
-                    <th><h4>TOTAL</h4></th>                   
+                    <th className="pl-4 min-w-[150px]"><h4>ID INSUMO</h4></th>
+                    <th><h4>NOMBRE</h4></th>
+                    <th><h4>FECHA DE CADUCIDAD</h4></th>
+                    <th><h4>CANTIDAD EN STOCK</h4></th>
+                    <th><h4>MEDIDAS</h4></th>
+                    <th><h4>PRECIO</h4></th>                   
                     <th><h4>ESTADO</h4></th>
                     <th className="w-[20%] text-right pr-[60px]" ><h4>ACCIONES</h4></th>
                 </tr>
                 {data.map(item => (
-                <tr className="text-[14px] h-14 text-[#757575] text-left items-center">
+                <tr className="text-[14px] h-12 text-[#757575] text-left">
 
                         
 
                     <td className="pl-[18px] w-[11px]">{item.id}</td>
-                    <td ><p>{item.vendedor}</p></td>
-                    <td><p>{item.cantidad_ordenes}</p></td>
-                    <td><p>{item.fecha}</p></td>
-                    <td><p>{item.metodo_pago}</p></td>
-                    <td><p>{item.total}</p></td>
+                    <td ><p>{item.nombre}</p></td>
+                    <td><p>{item.fecha_caducidad}</p></td>
+                    <td><p>{item.cantidad_stock}</p></td>
+                    <td><p>{item.medidas}</p></td>
+                    <td><p>{item.precio}</p></td>
                     <td>
 
                     {
@@ -68,8 +64,8 @@ export default function Tabla(props){
                     }
                     </td>
                     
-                    <td className=" text-right pr-[30px]  h-14 flex justify-end items-center"> 
-                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2">
+                    <td className=" text-right pr-[30px] flex justify-end"> 
+                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
                             <IconEye />
                         </button>
                         <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
