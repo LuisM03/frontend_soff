@@ -2,7 +2,7 @@ import Filter from "../components/filter"
 import Sidebar from "../components/sidebar/sidebar"
 import Cabecera from "../components/cabecera"
 import Cuerpo from "../components/cuerpo"
-import TablaRecetas from "../components/tablaRecetas"
+import TablaRecetas from "../components/tablas/tablaRecetas"
 import Footer from "../components/login_components/footer_login"
 
 export default function Receta(){

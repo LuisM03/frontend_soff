@@ -1,26 +1,27 @@
-import IconEye from "./icons/icon_eye"
-import IconToggle from "./icons/icon_toggle"
+import IconToggle from "../icons/icon_toggle"
+import IconEdit from "../icons/icon_edit"
+import IconEye from "../icons/icon_eye"
 
-export default function Tabla(props){
+export default function TablaRecetas(){
 
     const data = [
         {
             "id": "0001",
-            "vendedor": "Ximena Arrieta",
-            "cantidad_ordenes": 23,
-            "fecha": "21-11-2023 02:07 AM",
-            "metodo_pago": "Transferencia",
-            "total": "$69.000",
-            "estado": "activo"
+            "nombre": "Alas combo 1",
+            "categoria": "Alas",
+            "estado": "Activo"
         },
         {
             "id": "0002",
-            "vendedor": "Alejandra Soto",
-            "cantidad_ordenes": 34,
-            "fecha": "21-11-2023 02:10 AM",
-            "metodo_pago": "Efectivo",
-            "total": "$300.000",
-            "estado": "inactivo"
+            "nombre": "Cubano hawaiano",
+            "categoria": "Cubanos",
+            "estado": "Inactivo"
+        },
+        {
+            "id": "0003",
+            "nombre": "Hamburguesa con queso",
+            "categoria": "Hamburguesa",
+            "estado": "Inactivo"
         }
     ]
 
@@ -29,48 +30,42 @@ export default function Tabla(props){
             <div className="">
             <table className="bg-white w-full h-[500px] relative">
                 <tr className="bg-[#F8F8F8] h-11 w-[1200px] text-[13px] text-[#484848] text-left">
-                    <th className="pl-4 min-w-[150px]"><h4>ID VENTAS</h4></th>
-                    <th><h4>VENDEDOR</h4></th>
-                    <th><h4>CANIDAD DE ORDENES</h4></th>
-                    <th><h4>FECHA DE VENTA</h4></th>
-                    <th><h4>METODO DE PAGO</h4></th>
-                    <th><h4>TOTAL</h4></th>                   
-                    <th><h4>ESTADO</h4></th>
+                    <th className="pl-4 min-w-[150px]"><h4>ID RECETAS</h4></th>
+                    <th className="w-[310px]"><h4>NOMBRE</h4></th>
+                    <th className="w-[220px]"><h4>CATEGORÍA</h4></th>                 
+                    <th className="w-[700px]"><h4>ESTADO</h4></th>
                     <th className="w-[20%] text-right pr-[60px]" ><h4>ACCIONES</h4></th>
                 </tr>
                 {data.map(item => (
-                <tr className="text-[14px] h-14 text-[#757575] text-left items-center">
-
-                        
-
+                <tr className="text-[14px] h-12 text-[#757575] text-left">
                     <td className="pl-[18px] w-[11px]">{item.id}</td>
-                    <td ><p>{item.vendedor}</p></td>
-                    <td><p>{item.cantidad_ordenes}</p></td>
-                    <td><p>{item.fecha}</p></td>
-                    <td><p>{item.metodo_pago}</p></td>
-                    <td><p>{item.total}</p></td>
-                    <td>
-
+                    <td ><p>{item.nombre}</p></td>
+                    <td ><p>{item.categoria}</p></td>
+                    <td className="w-[900px]">
                     {
-                        item.estado === "activo" ? (
-                            <button className="bg-green-500 py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px]">
+                        item.estado === "Activo" ? (
+                            <button className="bg-green-500 py-1 px-2 text-[#fff] rounded-[11px] font-medium ">
                                 Activo
                             </button>
                         ): (
-                            <button className="bg-[#006FF1] py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px] ">
+                            <button className="bg-[#006FF1] py-1 px-2 text-[#fff] rounded-[11px] font-medium ">
                                 Inactivo
                             </button>
                         )
                     }
                     </td>
                     
-                    <td className=" text-right pr-[30px]  h-14 flex justify-end items-center"> 
-                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2">
+                    <td className=" text-right pr-[30px] flex justify-end"> 
+                    <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
+                        <IconEdit />
+                        </button>
+                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
                             <IconEye />
                         </button>
                         <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
                         <IconToggle />
                         </button>
+                        
                     </td>
 
                 </tr>

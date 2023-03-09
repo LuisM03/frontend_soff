@@ -1,5 +1,5 @@
-import IconToggle from "./icons/icon_toggle"
-import IconEdit from "./icons/icon_edit"
+import IconToggle from "../icons/icon_toggle"
+import IconEdit from "../icons/icon_edit"
 
 export default function TablaProductos(props){
 
