@@ -1,6 +1,6 @@
 export default function Factura(props){
     return (
-        <div className="bg-white w-full flex flex-col justify-between">
+        <div className="bg-white w-full flex flex-col justify-between h-full">
             <div className="">
                 <div className="text-center w-full flex flex-col py-5">
                     <h1 className="font-bold">MANDISA</h1>
@@ -16,24 +16,24 @@ export default function Factura(props){
                     <hr className="my-5"/>
                     <div className="text-center">
                         <h1 className="font-bold text-[30px]">$88.000</h1>
-                        <p>Total de venta</p>
+                        <p>Total de {props.modulo}</p>
                     </div>
                     <hr className="my-5"/>
                     <div>
                         <div className="flex justify-between px-4">
-                            <p className="font-semibold">Vendedor</p>
-                            <p>Ximena A.</p>
+                            <p className="font-semibold">{props.users}</p>
+                            <p>{props.name}</p>
                         </div>
                         <div className="flex justify-between px-4">
-                            <p className="font-semibold">Fecha de venta</p>
+                            <p className="font-semibold">Fecha de {props.modulo}</p>
                             <p>06/12/2022</p>
                         </div>
                     </div>
                     <hr className="my-5"/>
                 </div>
-                <div className="px-4 py-4">
+                <div className="px-4 py-4  my-auto">
                     <button className="flex items-center w-full py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded">
-                        Realizar venta
+                        Realizar {props.modulo}
                     </button>
                 </div>
             </div>
