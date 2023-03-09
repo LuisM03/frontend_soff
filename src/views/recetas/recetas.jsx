@@ -6,6 +6,16 @@ import Footer from "../../components/login_components/footer_login"
 import UpdateRece from "../../components/Recetas_componentes/Update"
 import FiltroReceta from "../../components/Recetas_componentes/filtroRecetas"
 
+// import { useState } from "react"
+// import Modal from "../components/modal"
+
+// export default function Compras(){
+//   const [active, setActive] = useState(false)
+
+//     const toggle = () => {
+//         setActive(!active)
+//     }
+// }
 export default function Receta(){
     return (
         <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
@@ -13,7 +23,7 @@ export default function Receta(){
         <div className="w-full relative ml-16">
           <Cabecera/>
           <Cuerpo modulo="Recetas" />
-          <FiltroReceta name="Agregar receta" modulo="Recetas"/>
+          <FiltroReceta name="Agregar receta" modulo="Recetas" action={()=>{window.location.href = "/addRecipe"}}/>
           <TablaRecetas/>
           <UpdateRece 
               title="Actualizar detalle de insumo" 
