@@ -1,5 +1,5 @@
-import IconEdit from "./icons/icon_edit"
-import IconToggle from "./icons/icon_toggle"
+import IconEdit from "../icons/icon_edit"
+import IconToggle from "../icons/icon_toggle"
 
 export default function TablaOrder(props){
 
