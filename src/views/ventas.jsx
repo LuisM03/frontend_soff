@@ -3,7 +3,7 @@ import Cabecera from "../components/cabecera"
 import Cuerpo from "../components/cuerpo"
 import Filter from "../components/filter"
 import FooterLogin from "../components/login_components/footer_login"
-import Tabla from "../components/tabla"
+import Tabla from "../components/tablas/tabla"
 import { useState } from "react"
 import Modal from "../components/modal"
 

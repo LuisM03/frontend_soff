@@ -5,11 +5,7 @@ import Filter from "../../components/filter"
 import Footer from "../../components/login_components/footer_login"
 import TablaProductos from "../../components/tablas/tablaProductos"
 import RegisterUpdate from "../../components/products_register_update/registerUpdate"
-import Registro from "../../components/registro"
 import CreatUpdateProd from "../../components/products_componentes/CreatUpdate"
-import CreatUpdateProd from "../../components/products_componentes/CreatUpdate"
-import RegisterUpdate from "../../components/products_register_update/registerUpdate"
-import Registro from "../../components/registro"
 
 
 export default function Producto(){
