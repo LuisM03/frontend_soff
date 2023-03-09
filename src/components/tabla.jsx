@@ -39,7 +39,7 @@ export default function Tabla(props){
                     <th className="w-[20%] text-right pr-[60px]" ><h4>ACCIONES</h4></th>
                 </tr>
                 {data.map(item => (
-                <tr className="text-[14px] h-12 text-[#757575] text-left">
+                <tr className="text-[14px] h-14 text-[#757575] text-left items-center">
 
                         
 
@@ -64,7 +64,7 @@ export default function Tabla(props){
                     }
                     </td>
                     
-                    <td className=" text-right pr-[30px] flex justify-end"> 
+                    <td className=" text-right pr-[30px]  h-14 flex justify-end items-center"> 
                         <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
                             <IconEye />
                         </button>
