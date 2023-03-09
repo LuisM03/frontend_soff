@@ -1,4 +1,4 @@
-export default function Registro(props){
+export default function CreatUpdateRece(props){
     return(
         <div className="flex items-center sm:px-4 mb-10">
             <form className="">
