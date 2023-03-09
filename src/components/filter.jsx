@@ -36,6 +36,7 @@ export default function Filter(props){
                 <FilterOrder open={open}/>
             ):""
         }
+        </div>
   )
 }
 
