@@ -1,20 +1,26 @@
 import Sidebar from "../components/sidebar/sidebar"
-import Tabla from "../components/tablas/tabla"
-import TablaProveedores from "../components/tablaproveedores"
-import Filter from "../components/filter"
+import Order from "../components/order"
 import Footer from "../components/login_components/footer_login"
 import Cuerpo from "../components/cuerpo"
 import Cabecera from "../components/cabecera"
+import TablaOrder from "../components/tablaOrder"
 
-export default function Providers(){
+export default function Addcompras(){
     return(
         <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
           <Sidebar />
           <div className="w-full relative ml-16">
             <Cabecera/>
-            <Cuerpo modulo="Proveedores" />
-            <Filter name="Agregar proveedor" modulo="proveedores"/>
-            <TablaProveedores/>
+            <Cuerpo modulo="Ordenes" />
+            <div className="flex">
+              <div className="w-[60%] ml-16">
+              <Order name="Agregar Insumo"/>
+              <TablaOrder/>
+              </div>
+              <div >
+                <p>FACTURA</p>
+              </div>
+            </div>
             <Footer />
           </div> 
         </div>

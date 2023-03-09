@@ -1,17 +1,33 @@
-import Filter from "../components/filter"
 import Sidebar from "../components/sidebar/sidebar"
-import Order from "../components/order"
-import FilterOrder from "../components/filter-order"
+import TablaCompras from "../components/tablaCompras"
+import TablaOrderCompra from "../components/tablaOrderCompra"
+import Filter from "../components/filter"
+import Footer from "../components/login_components/footer_login"
+import Cuerpo from "../components/cuerpo"
+import Cabecera from "../components/cabecera"
+
+import { useState } from "react"
+import Modal from "../components/modal"
 
 export default function Compras(){
-    return (
-        <div className="flex bg-[#F2F2F2]">
+  const [active, setActive] = useState(false)
+
+    const toggle = () => {
+        setActive(!active)
+    }
+    return(
+        <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
           <Sidebar />
-          <div>
-            <Order name="Agregar insumo"/>
-            <Filter/>
-          </div>
-          <FilterOrder/>
+          <div className="w-full relative ml-16">
+            <Cabecera/>
+            <Cuerpo modulo="Compras" />
+            <Filter name="Agregar Compra" modulo="compras" action={()=>{window.location.href = "/addcompras"}}/>
+            <TablaCompras activeModal={toggle}/>
+            <Footer />
+          </div> 
+          <Modal active={active} toggle={toggle} heigth="max-h-[450px]" width="w-[680px]">
+                <TablaOrderCompra/> 
+            </Modal>
         </div>
     )
 }
