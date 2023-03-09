@@ -7,6 +7,11 @@ import TablaProductos from "../../components/tablas/tablaProductos"
 import RegisterUpdate from "../../components/products_register_update/registerUpdate"
 import Registro from "../../components/registro"
 import CreatUpdateProd from "../../components/products_componentes/CreatUpdate"
+import CreatUpdateProd from "../../components/products_componentes/CreatUpdate"
+import RegisterUpdate from "../../components/products_register_update/registerUpdate"
+import Registro from "../../components/registro"
+
+
 export default function Producto(){
     return (
         <div className="flex min-h-screen w-full bg-[#F2F2F2]" >
