@@ -1,10 +1,10 @@
-import Filter from "../../components/filter"
 import Sidebar from "../../components/sidebar/sidebar"
 import Cabecera from "../../components/cabecera"
 import Cuerpo from "../../components/cuerpo"
 import TablaRecetas from "../../components/tablas/tablaRecetas"
 import Footer from "../../components/login_components/footer_login"
 import UpdateRece from "../../components/Recetas_componentes/Update"
+import FiltroReceta from "../../components/Recetas_componentes/filtroRecetas"
 
 export default function Receta(){
     return (
@@ -13,7 +13,7 @@ export default function Receta(){
         <div className="w-full relative ml-16">
           <Cabecera/>
           <Cuerpo modulo="Recetas" />
-          <Filter name="Agregar receta" modulo="Recetas"/>
+          <FiltroReceta name="Agregar receta" modulo="Recetas"/>
           <TablaRecetas/>
           <UpdateRece 
               title="Actualizar detalle de insumo" 
