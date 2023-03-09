@@ -4,6 +4,7 @@ import Footer from "../components/login_components/footer_login"
 import Cuerpo from "../components/cuerpo"
 import Cabecera from "../components/cabecera"
 import TablaOrder from "../components/tablaOrder"
+import Factura from "../components/factura"
 
 export default function Addcompras(){
     return(
@@ -13,12 +14,12 @@ export default function Addcompras(){
             <Cabecera/>
             <Cuerpo modulo="Ordenes" />
             <div className="flex">
-              <div className="w-[60%] ml-16">
-              <Order name="Agregar Insumo"/>
-              <TablaOrder/>
+              <div className="w-[70%] ml-16">
+                <Order name="Agregar Insumo"/>
+                <TablaOrder/>
               </div>
-              <div >
-                <p>FACTURA</p>
+              <div className="w-[20%]">
+                <Factura subtotal="$88.000" />
               </div>
             </div>
             <Footer />
