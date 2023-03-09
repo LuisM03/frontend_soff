@@ -1,26 +1,30 @@
 import IconEye from "./icons/icon_eye"
 import IconToggle from "./icons/icon_toggle"
 
-export default function Tabla(props){
+export default function TablaProveedores(props){
 
     const data = [
         {
             "id": "0001",
-            "vendedor": "Ximena Arrieta",
-            "cantidad_ordenes": 23,
+            "nombre": "Alverto Moreno",
+            "empresa": "Morenos S.A.S",
             "fecha": "21-11-2023 02:07 AM",
-            "metodo_pago": "Transferencia",
-            "total": "$69.000",
+            "direccion": "Diagonal 68A #41D",
+            "numero_contacto": "3262366655",
+            "correo":"albmo@morenos.com",
+            "ciudad": "Medellín",
             "estado": "activo"
         },
         {
-            "id": "0002",
-            "vendedor": "Alejandra Soto",
-            "cantidad_ordenes": 34,
-            "fecha": "21-11-2023 02:10 AM",
-            "metodo_pago": "Efectivo",
-            "total": "$300.000",
-            "estado": "inactivo"
+            "id": "0001",
+            "nombre": "Alverto Moreno",
+            "empresa": "Morenos S.A.S",
+            "fecha": "21-11-2023 02:07 AM",
+            "direccion": "Diagonal 68A #41D",
+            "numero_contacto": "3262366655",
+            "correo":"albmo@morenos.com",
+            "ciudad": "Medellín",
+            "estado": "activo"
         }
     ]
 
@@ -28,43 +32,47 @@ export default function Tabla(props){
         <div className="max-w-[1400px] mx-auto sm:px-4" >
             <div className="">
             <table className="bg-white w-full h-[500px] relative">
-                <tr className="bg-[#F8F8F8] h-11 w-[1200px] text-[13px] text-[#484848] text-left">
-                    <th className="pl-4 min-w-[150px]"><h4>ID VENTAS</h4></th>
-                    <th><h4>VENDEDOR</h4></th>
-                    <th><h4>CANIDAD DE ORDENES</h4></th>
-                    <th><h4>FECHA DE VENTA</h4></th>
-                    <th><h4>METODO DE PAGO</h4></th>
-                    <th><h4>TOTAL</h4></th>                   
+                <tr className="bg-[#F8F8F8] h-11 w-[1200px] text-[13px] text-[#484848] text-left text-[9px]">
+                    <th className="pl-4 min-w-[100px]"><h4>ID</h4></th>
+                    <th><h4>NOOMBRE</h4></th>
+                    <th><h4>EMPRESA</h4></th>
+                    <th><h4>FECHA</h4></th>
+                    <th><h4>DIRECCION</h4></th>
+                    <th><h4>NUMERO</h4></th>                   
+                    <th><h4>CORREO</h4></th>                   
+                    <th><h4>CIUDAD</h4></th>                   
                     <th><h4>ESTADO</h4></th>
-                    <th className="w-[20%] text-right pr-[60px]" ><h4>ACCIONES</h4></th>
+                    <th className="w-[10%] text-right pr-[60px] pl-[40px]" ><h4>ACCIONES</h4></th>
                 </tr>
                 {data.map(item => (
-                <tr className="text-[14px] h-14 text-[#757575] text-left items-center">
+                <tr className="text-[12px] h-12 text-[#757575] text-left">
 
                         
 
-                    <td className="pl-[18px] w-[11px]">{item.id}</td>
-                    <td ><p>{item.vendedor}</p></td>
-                    <td><p>{item.cantidad_ordenes}</p></td>
+                    <td className="pl-[18px] w-[11px] ">{item.id}</td>
+                    <td ><p>{item.nombre}</p></td>
+                    <td><p>{item.empresa}</p></td>
                     <td><p>{item.fecha}</p></td>
-                    <td><p>{item.metodo_pago}</p></td>
-                    <td><p>{item.total}</p></td>
+                    <td><p>{item.direccion}</p></td>
+                    <td><p>{item.numero_contacto}</p></td>
+                    <td><p>{item.correo}</p></td>
+                    <td><p>{item.ciudad}</p></td>
                     <td>
 
                     {
                         item.estado === "activo" ? (
-                            <button className="bg-green-500 py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px]">
+                            <button className="bg-green-500 py-1 px-2 text-[#fff] rounded-[11px] font-medium ">
                                 Activo
                             </button>
                         ): (
-                            <button className="bg-[#006FF1] py-1 px-2 text-[#fff] rounded-[11px] font-medium w-[70px] ">
+                            <button className="bg-[#006FF1] py-1 px-2 text-[#fff] rounded-[11px] font-medium ">
                                 Inactivo
                             </button>
                         )
                     }
                     </td>
                     
-                    <td className=" text-right pr-[30px]  h-14 flex justify-end items-center"> 
+                    <td className=" text-right pr-[30px] flex justify-end"> 
                         <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
                             <IconEye />
                         </button>
