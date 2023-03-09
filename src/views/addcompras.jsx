@@ -19,7 +19,7 @@ export default function Addcompras(){
                 <TablaOrder/>
               </div>
               <div className="w-[20%]">
-                <Factura subtotal="$88.000" />
+                <Factura subtotal="$88.000" modulo="compra" users="Proveedor" name="VERDU-HIT"/>
               </div>
             </div>
             <Footer />
