@@ -19,7 +19,7 @@ export default function AddReceta(){
                   <TablaDetalleReceta/>
                 </div>
                 <div className="w-[20%] h-[20%] mt-[150px]">
-                  <FacturaDetalleReceta />
+                  <FacturaDetalleReceta action={()=>{window.location.href = "/recetas"}}/>
                 </div>
             </div>
             <Footer />

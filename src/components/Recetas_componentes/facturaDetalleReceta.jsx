@@ -25,7 +25,7 @@ export default function FacturaDetalleReceta(props){
                     <hr className="my-5"/>
                 </div>
                 <div className="px-4 py-4  ">
-                    <button className="flex items-center w-full justify-center mt-[116px] py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded">
+                    <button className="flex items-center w-full justify-center mt-[116px] py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded" onClick={props.action}>
                         Registrar receta
                     </button>
                 </div>
