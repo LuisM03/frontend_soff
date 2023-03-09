@@ -1,12 +1,10 @@
 import Sidebar from "../../components/sidebar/sidebar"
 import Cabecera from "../../components/cabecera"
 import Cuerpo from "../../components/cuerpo"
-import Filter from "../../components/filter"
 import Footer from "../../components/login_components/footer_login"
 import TablaProductos from "../../components/tablas/tablaProductos"
-// import RegisterUpdate from "../../components/products_register_update/registerUpdate"
 import CreatUpdateProd from "../../components/products_componentes/CreatUpdate"
-
+import FiltrarBusqueda from "../../components/products_componentes/filtrarBusqueda"
 
 export default function Producto(){
     return (
@@ -15,7 +13,7 @@ export default function Producto(){
         <div className="w-full relative ml-16">
           <Cabecera/>
           <Cuerpo modulo="Productos" />
-          <Filter name="Agregar producto" modulo="productos"/>
+          <FiltrarBusqueda name="Agregar producto" modulo="productos"/>
           <TablaProductos/>
           <CreatUpdateProd title="Registrando un nuevo producto" text="Ahora puedes registrar un producto, 
               recuerda que todos los campos acontinuación son requeridos." campo1="Nombre" 
