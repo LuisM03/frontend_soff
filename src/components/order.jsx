@@ -24,7 +24,7 @@ export default function Order(props){
                 </div>
             </form>
 
-            <div className="p-4 flex ml-4 bg-[#0453F4] text-white rounded h-12 m-auto">
+            <div className="p-4 flex  bg-[#0453F4] text-white rounded h-12 ml-auto">
                 <button className="flex items-center">
                     <label>{props.name}</label>
                 </button> 

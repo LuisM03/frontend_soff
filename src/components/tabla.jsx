@@ -65,7 +65,7 @@ export default function Tabla(props){
                     </td>
                     
                     <td className=" text-right pr-[30px]  h-14 flex justify-end items-center"> 
-                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
+                        <button className="border h-10 w-10 flex items-center justify-center rounded mr-2">
                             <IconEye />
                         </button>
                         <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
