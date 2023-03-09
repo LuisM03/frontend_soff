@@ -4,7 +4,6 @@ import Footer from "../components/login_components/footer_login"
 import Cuerpo from "../components/cuerpo"
 import Cabecera from "../components/cabecera"
 import TablaOrder from "../components/tablas/tablaOrder"
-import TablaOrder from "../components/tablaOrder"
 import Factura from "../components/factura"
 
 export default function Addcompras(){
