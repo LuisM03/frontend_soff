@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Dashboard from "./views/dashboard"
 import Insumo from "./views/insumos";
 import Pedido from "./views/pedidos";
 import Ventas from "./views/ventas";
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Login />
+    },
+    {
+        path: "/dashboard",
+        element: <Dashboard />
     },
     {
         path: "/ventas",

@@ -29,8 +29,8 @@ export default function TablaOrder(props){
                 <th className="pl-4 min-w-[150px]"><h4>N° ORDEN</h4></th>
                 <th><h4>INSUMO</h4></th>
                 <th><h4>CANTIDAD</h4></th>
-                <th className="w-[200px]"><h4>PRECIO UNITARIO</h4></th>
-                <th className="w-[180px]"><h4>SUBTOTAL</h4></th>
+                <th><h4>PRECIO UNITARIO</h4></th>
+                <th><h4>SUBTOTAL</h4></th>
                 <th className="w-[20%] text-right pr-[60px]" ><h4>ACCIONES</h4></th>
             </tr>
             {data.map(item => (

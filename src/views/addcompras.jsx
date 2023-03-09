@@ -13,7 +13,7 @@ export default function Addcompras(){
             <Cabecera/>
             <Cuerpo modulo="Ordenes" />
             <div className="flex">
-              <div>
+              <div className="w-[60%] ml-16">
               <Order name="Agregar Insumo"/>
               <TablaOrder/>
               </div>
