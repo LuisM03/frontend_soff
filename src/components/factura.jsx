@@ -2,7 +2,7 @@ export default function Factura(props){
     return (
         <div className="bg-white w-full flex flex-col justify-between h-full">
             <div className="">
-                <div className="text-center w-full flex flex-col py-5">
+                <div className="text-center w-full flex flex-col pt-5">
                     <h1 className="font-bold">MANDISA</h1>
                     <p className="text-[#808080] text-[12px]">NIT 71227771-4</p>
                     <p className="text-[#808080] text-[12px]">Diagonal 57 #20-27, Navarra/Bello</p>
@@ -31,8 +31,8 @@ export default function Factura(props){
                     </div>
                     <hr className="my-5"/>
                 </div>
-                <div className="px-4 py-4  my-auto">
-                    <button className="flex items-center w-full py-2 px-4 flex ml-auto bg-[#0453F4] text-white rounded">
+                <div className="px-4 py-4 mt-[110px]">
+                    <button className="flex justify-center items-center w-full py-2 px-4 flex bg-[#0453F4] text-white rounded">
                         Realizar {props.modulo}
                     </button>
                 </div>

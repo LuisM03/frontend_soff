@@ -45,7 +45,7 @@ export default function TablaOrder(props){
                 <td><p>{item.subtotal}</p></td>
                 
                 <td className=" text-right pr-[30px] flex justify-end"> 
-                    <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
+                    <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" onClick={props.activeModal} >
                         <IconEdit />
                     </button>
                     <button className="border h-10 w-10 flex items-center justify-center rounded mr-2" >
